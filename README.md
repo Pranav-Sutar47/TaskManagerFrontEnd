@@ -1,8 +1,30 @@
-# React + Vite
+TaskManager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Frontend (React)
+Components:
+TaskList: Displays all tasks.
+TaskItem: Represents each individual task.
+AddTaskForm: A form to add a new task.
+TaskEditModal: Modal for editing tasks.
 
-Currently, two official plugins are available:
+2. Backend (Node.js + Express)
+Routes:
+GET /tasks: Get all tasks.
+POST /tasks: Add a new task.
+PUT /tasks/:id: Update an existing task.
+DELETE /tasks/:id: Delete a task.
+Controllers: Handle the logic for these routes.
+Middleware: Use JWT authentication middleware for secure access to routes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Database (MongoDB)
+CRUD Operations: Perform create, read, update, and delete operations through your Express routes.
+
+4. Authentication
+Implement user authentication with JWT (JSON Web Tokens) to secure task management.
+Login and Register routes on the backend with JWT issuance upon successful authentication.
+
+Tools:
+Thunder Client: For testing APIs.
+MongoDB Atlas: Cloud-based MongoDB instance.
+Netlify: For deploying frontend of application.
+Render : For deploying backend of application.
