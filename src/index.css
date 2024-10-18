@@ -1,0 +1,22 @@
+.linkText{
+  text-decoration: underline;
+  
+}
+
+.linkText:hover{
+  font-weight: bold;
+  color:rgb(69, 87, 245);
+}
+
+.img-fluid{
+  width: 60%;
+  height: 50%;
+}
+
+@media screen and (max-width:580px){
+  .icon{
+    width: 30%;
+    height: 30%;
+  }
+}
+
