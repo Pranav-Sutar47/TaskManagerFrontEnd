@@ -31,9 +31,10 @@ export default function Login() {
                 showToast('Login Successful','success');
                 localStorage.setItem('token',res.token);
                 localStorage.setItem('user',res.name);
-                setTimeout(()=>{
-                    navigate('/home');
-                },1000);
+                // setTimeout(()=>{
+                //     navigate('/home');
+                // },1000);
+                navigate('/home');
             }else
                 showToast(res.msg,'error')
         }catch(err){
